@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './registration.css';
-const localStorageData = JSON.parse(localStorage.getItem("users_data"));
+const localStorageData = JSON.parse(localStorage.getItem("users_data")) || [];
     let vehicleNumber=""
     let name=""
     let phone=""
@@ -48,7 +48,7 @@ const RegistrationForm = () => {
                 <input type="number" name="phone" id="name" placeholder="Mobile number"  onChange={(e) => handlePhone(e) }required/>
                 <input type="text" name="address" placeholder="address"  onChange={(e) => handleAddress(e)} required/>
                 <input type="text" name="isMissing" placeholder="isMissing"  onChange={(e) => handleModel(e)} required/>
-                <input typr="text" name="model" placeholder="model"  onChange={(e) => handleIsMisssing(e)} required/>
+                <input type="text" name="model" placeholder="model"  onChange={(e) => handleIsMisssing(e)} required/>
                 <button type="submit" name="submit" className="button1">Register </button>
             </form>
         </div>

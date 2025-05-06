@@ -4,7 +4,7 @@ export default class Heatmap extends React.Component {
   render() {
     return (
       <div>
-        <iframe src={'/heatmap.html'} style={styles.map} />
+        <iframe src={'/heatmap.html'} style={styles.map} title="heatMap" />
       </div>
     );
   }
@@ -13,7 +13,7 @@ export default class Heatmap extends React.Component {
 const styles = {
   map: {
     width: '100%',
-    height: '82vh',
+    height: '90vh',
     border: 'none'
   }
 };

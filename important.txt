@@ -1,5 +1,5 @@
 
- /usr/bin/python3 "/home/sunil/Desktop/Final year project (sunil,Bhanu,Badal,Aman))/vehicle_number_by_its_plate/image_example.py"
+ /usr/bin/python3 "/home/manish/Desktop/Final year project (Manish, Ankit, Abhimanyu, Rahul)))/vehicle_number_by_its_plate/image_example.py"
 
 
  ./ngrok http 3000 -host-header="localhost:3000"

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu } from 'antd';
 import Logo from './Logo';
 import traffic_icon from '../../images/traffic_icon.png';
+import statisticsImage from '../../images/statistics.png';
+import trafficFineImage from '../../images/trafficFine.png';
 import { Link } from 'react-router-dom';
 
 export default class Sidebar extends Component {
@@ -12,29 +14,23 @@ export default class Sidebar extends Component {
         <Menu  style={ styles.titleHeader } mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="1">
             <Link to="/">
-              <img src={traffic_icon} style={styles.icon} />
+              <img src={traffic_icon} style={styles.icon} alt="Traffic Icon" />
               <span style={ styles.titleText }>Live Traffic</span>
               </Link>
             </Menu.Item>
-          {/* <Menu.Item key="2">
-          <Link to="/heatmap"><img src='https://image.flaticon.com/icons/svg/266/266690.svg' style={styles.icon} />
-          <span style={ styles.titleText }>Accident Mapping </span></Link>
-          </Menu.Item> */}
-          {/* <Menu.Item key="3">
-          <Link to="/corridor"><img src='https://image.flaticon.com/icons/svg/149/149058.svg' style={styles.icon} />
-          <span style={ styles.titleText }>Green Corridor</span></Link>
-          </Menu.Item> */}
+            
+          
           <Menu.Item key="4">
-          <Link to="/stats"><img src='https://image.flaticon.com/icons/svg/138/138351.svg' style={styles.icon} />
+          <Link to="/stats"><img src={statisticsImage} style={styles.icon} alt="Statistics Icon" />
           <span style={ styles.titleText }>Statistics</span></Link>
           </Menu.Item>
           <Menu.Item key="5">
-          <Link to="/fine"><img src='https://image.flaticon.com/icons/svg/584/584035.svg' style={styles.icon} />
+          <Link to="/fine"><img src={trafficFineImage} style={styles.icon} alt="Traffic Fine Icon" />
           <span style={ styles.titleText }>Fine</span></Link>
           </Menu.Item>
           <Menu.Item key="6">
           <Link to="/vehicleRegisteration">
-            <img  style={styles.icon} src={require('./register.svg')}/>
+            <img  style={styles.icon} src={require('./register.svg')} alt="Vahicle Registration Icon" />
           <span style={ styles.titleText }>Registration</span>
           </Link>
           </Menu.Item>

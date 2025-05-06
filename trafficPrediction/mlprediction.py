@@ -7,8 +7,8 @@ import pandas as pd
 from math import floor
 
 # Importing the dataset
-dataset = pd.read_csv('/usr/bin/python3 "/home/sunil/Desktop/Final year project (sunil,Bhanu,Badal,Aman))/trafficPrediction/cars.csv')
-temp = pd.read_csv('/usr/bin/python3 "/home/sunil/Desktop/Final year project (sunil,Bhanu,Badal,Aman))/trafficPrediction/cars.csv',usecols=[0,1,4])
+dataset = pd.read_csv('/usr/bin/python3 "/home/manish/Desktop/Final year project (Manish, Ankit, Abhimanyu, Rahul))/trafficPrediction/cars.csv')
+temp = pd.read_csv('/usr/bin/python3 "/home/manish/Desktop/Final year project (Manish, Ankit, Abhimanyu, Rahul))/trafficPrediction/cars.csv',usecols=[0,1,4])
 X = temp.iloc[:,:].values
 lane1 = dataset.iloc[:, 5].values
 lane2 = dataset.iloc[:, 6].values

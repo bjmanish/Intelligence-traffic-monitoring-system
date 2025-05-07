@@ -94,12 +94,10 @@ export default class LiveTraffic extends Component {
       { lat: 24.600500, lng: 80.832200 }, // Satna City Road
     ];
     
-    // const api_key = 'AIzaSyAtx_lIJ0GsFLKtlaCsMyo7K7Rq8IeTCx4';
-    // cinst API =   "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"
 
     return (
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyA99skK_9Nbs0XIn340PKxdPbtN4xL30G0' } | {client: '516291369738-7hgc7ccvghu0trge61ptsqi5786peuro.apps.googleusercontent.com' } }
+        bootstrapURLKeys={{ key: 'AIzaSyA99skK-9Nbs0XIn340PKxdPbtN4xL30G0' } }
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
         layerTypes={['TrafficLayer']}
